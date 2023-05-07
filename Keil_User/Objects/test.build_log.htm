@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mm mm, acam, LIC=PE7DL-0JACW-01NP1-CSPC8-T55IX-BRTUX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TARMCM1.DLL V1.14.3.0
+ 
+<h2>Project:</h2>
+F:\Mofidi\WORKSPACE\hk32f030m-template\Keil_User\test.uvprojx
+Project File Date:  05/07/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+../User/main.c(11): warning: In file included from...
+../Libraries/CMSIS/HK32F030M/Include\hk32f030m.h(4632): warning: In file included from...
+../User\hk32f030m_conf.h(79): warning: In file included from...
+../Libraries/HK32F030M_Driver/inc\hk32f030m_gpio.h(119): warning: padding size of 'GPIO_InitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+../User/main.c(27): warning: no previous prototype for function 'LED_GPIO_Config' [-Wmissing-prototypes]
+void LED_GPIO_Config(void)
+     ^
+../User/main.c(27): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void LED_GPIO_Config(void)
+^
+static 
+2 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=1916 RO-data=208 RW-data=4 ZI-data=1644  
+FromELF: creating hex file...
+".\Objects\test.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: HKMicroChip
+                http://www.hsxp-hk.com/companyfile/2/HKMicroChip.HK32F0xx_DFP.1.0.8.pack
+                HKMicroChip.HK32F0xx_DFP.1.0.8
+                HKMicroChip HK32F0 ARM Cortex-M0 Device Family Pack Device Support
+   * Component: Startup Version: 1.0.0
+
+Package Vendor: HKMicroChip
+                http://www.hsxp-hk.com/companyfile/2/HKMicroChip.HK32F030xMxx_DFP.1.0.17.pack
+                HKMicroChip.HK32F030xMxx_DFP.1.0.17
+                HKMicroChip HK32F030xMxx ARM Cortex-M0 Device Family Pack Device Support
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: HKMicroChip::Device:Startup:1.0.0
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
