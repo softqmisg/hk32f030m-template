@@ -57,5 +57,6 @@
 
 # Building
 
-Use Keil software for compiling the project.
-startup_hk32f030mf4p6.s file generate from CubeMx for stm32f030f4p6 and copy instead of original ones. In the project options->Asm Tab-> Assembler Option, confirm that armclang was selected as compiler. 
+* Use Keil software for compiling the project.
+* startup_hk32f030mf4p6.s file generate from CubeMx for stm32f030f4p6 and copy instead of original ones.
+*  In the project options->Asm Tab-> Assembler Option, confirm that armclang was selected as compiler. 
